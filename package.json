@@ -1,5 +1,5 @@
 {
-  "name": "array-combination",
+  "name": "array-combinations",
   "version": "1.0.0",
   "description": "find all combinations of string arrays",
   "main": "./src/index.ts",
