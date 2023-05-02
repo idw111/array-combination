@@ -5,13 +5,13 @@
 ## Install
 
 ```bash
-npm install array-combination
+npm install @idw111/array-combination
 ```
 
 ## Quick Start
 
 ```ts
-import { combination } from 'array-combination';
+import { combination } from '@idw111/array-combination';
 
 combination(['a', 'b'], ['1', '2']);
 // [['a', '1'], ['a', '2'], ['b', '1'], ['b', '2']]
