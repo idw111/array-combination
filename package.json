@@ -1,0 +1,44 @@
+{
+  "name": "array-combination",
+  "version": "1.0.0",
+  "description": "find all combinations of string arrays",
+  "main": "./src/index.ts",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/esm/index.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.cjs.json & tsc --project tsconfig.esm.json",
+    "clean": "rm -rf dist",
+    "prepublish": "npm run clean && npm run build",
+    "test": "mocha --require ts-node/register src/**/*.spec.ts"
+  },
+  "keywords": [
+    "array",
+    "combination"
+  ],
+  "author": {
+    "name": "Dongwon Lim",
+    "email": "idw111@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idw111/array-combination"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
