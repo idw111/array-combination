@@ -1,7 +1,7 @@
 {
   "name": "@idw111/array-combination",
-  "version": "1.0.3",
-  "description": "find all combinations of string arrays",
+  "version": "1.0.4",
+  "description": "find all combinations of arrays",
   "main": "./src/index.ts",
   "types": "dist/types/index.d.ts",
   "exports": {
@@ -17,11 +17,12 @@
     "build": "tsc --project tsconfig.cjs.json & tsc --project tsconfig.esm.json",
     "clean": "rm -rf dist",
     "prepublish": "npm run clean && npm run build",
-    "test": "mocha --require ts-node/register src/**/*.spec.ts"
+    "test": "npm run build && mocha dist/cjs/**/*.spec.js"
   },
   "keywords": [
     "array",
-    "combination"
+    "combination",
+    "all combinations"
   ],
   "author": {
     "name": "Dongwon Lim",
